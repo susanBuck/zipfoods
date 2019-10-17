@@ -1,0 +1,59 @@
+/* box sizing: http://www.paulirish.com/2012/box-sizing-border-box-ftw */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* http://snook.ca/archives/html_and_css/font-size-with-rem */
+    color: #111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /* sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Default font-size */
+    font-size: 1.6rem;
+
+    /* sticky footer - match footer height */
+    margin-bottom: 60px;
+}
+
+header {
+    text-align:center;
+}
+
+#main {
+    width:80%;
+    max-width:800px;
+    margin:auto;
+}
+
+#products {
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.product h2 {
+    font-size:2.0rem;
+}
+
+.product {
+    border:1px solid black;
+    padding:20px;
+    width:300px;
+    margin:20px;
+}
+
+.productImage {
+    width:150px;
+    display:block;
+    margin:auto;
+}
